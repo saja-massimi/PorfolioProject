@@ -25,6 +25,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    width: 100vw;
 
 
 }
@@ -127,6 +128,57 @@ nav img {
     width: 50%;
     font-size: 0.4em;
     border: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+
+.header-content-text button:hover {
+    background-color: rgb(151, 149, 152);
+    color: #493f75;
+
+}
+
+@media (max-width: 480px) {
+
+    .header-content-text {
+
+        font-size: 2em;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .header-content img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: start;
+        align-content: center;
+        flex-wrap: wrap;
+        margin: 30px;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0px 30px;
+        top: 0px;
+        position: relative;
+    }
+
+    nav ul li a {
+        color: #493f75;
+    }
+
+
 }
 
 main {
@@ -193,6 +245,15 @@ main {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+
+}
+
+@media (max-width:768px) {
+
+    #services {
+        margin-top: 300px;
+    }
+
 
 }
 
@@ -266,6 +327,13 @@ main {
 
 }
 
+@media (max-width: 768px) {
+    .circle {
+        height: 80px;
+        width: 80px;
+    }
+}
+
 #projects {
     text-align: center;
 }
@@ -323,8 +391,7 @@ main {
 }
 
 #testimonials {
-    margin: 20px;
-    padding: 20px;
+
     background-color: #f9f9f9;
 }
 
@@ -351,7 +418,7 @@ main {
 }
 
 .testimonialCard:hover {
-    box-shadow: 3px 3px 15px 3px #dee2e6;
+    box-shadow: 3px 3px 15px 3px #f9d0ff;
 }
 
 .testimonialCard img {
