@@ -94,7 +94,7 @@ nav img {
     align-content: center;
     flex-wrap: wrap;
 
-    margin: 300px;
+    margin: 150px;
 
 }
 
@@ -139,48 +139,6 @@ nav img {
 
 }
 
-@media (max-width: 480px) {
-
-    .header-content-text {
-
-        font-size: 2em;
-    }
-
-
-}
-
-@media (max-width: 768px) {
-    .header-content img {
-        width: 200px;
-        height: 150px;
-    }
-
-    .header-content {
-        display: flex;
-        justify-content: start;
-        align-content: center;
-        flex-wrap: wrap;
-        margin: 30px;
-
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin: 0px 30px;
-        top: 0px;
-        position: relative;
-    }
-
-    nav ul li a {
-        color: var(--primary);
-    }
-
-
-}
-
 main {
 
     display: grid;
@@ -198,7 +156,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-top: 30px;
+    padding-top: 2px;
     gap: 20px;
 }
 
@@ -248,22 +206,13 @@ main {
 
 }
 
-@media (max-width:768px) {
-
-    #services {
-        margin-top: 300px;
-    }
-
-
-}
 
 #skills {
-
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
+    gap: 20px;
     width: 80%;
     max-width: 600px;
     padding: 50px;
@@ -327,12 +276,7 @@ main {
 
 }
 
-@media (max-width: 768px) {
-    .circle {
-        height: 80px;
-        width: 80px;
-    }
-}
+
 
 #projects {
     text-align: center;
@@ -439,23 +383,7 @@ main {
     padding: 20px;
 }
 
-@media (max-width: 768px) {
-    .testimonialCard {
-        flex-direction: column;
-        text-align: center;
 
-    }
-
-    .testimonialCard img {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .cardContent p {
-        text-align: center;
-
-    }
-}
 
 #highlights {
     padding: 50px 20px;
@@ -508,16 +436,6 @@ main {
     color: #333;
 }
 
-@media (max-width: 768px) {
-    .highlight-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .highlight-card {
-        width: 100%;
-    }
-}
 
 footer {
     background-color: #493f75;
@@ -563,4 +481,181 @@ footer {
 
 .social-icons a:hover {
     color: #dedbed;
+}
+
+@media (max-width: 480px) {
+    .testimonialContent {
+
+        gap: 10px;
+        margin: 25px;
+    }
+
+    .box {
+        width: 300px;
+        margin: 50px;
+
+    }
+
+    .servicesContent {
+
+        padding-top: 10px;
+        gap: 5px;
+    }
+
+    .section {
+        margin: 0px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    header {
+        height: 100%;
+        width: 100%;
+        padding-bottom: 50px;
+
+    }
+
+
+    nav {
+        margin: 0px;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+        align-items: start;
+    }
+
+    .header-content-text {
+
+        font-size: 2em;
+    }
+
+    .servicesContent {
+
+        padding-top: 2px;
+        gap: 10px;
+    }
+
+
+
+    .highlight-card {
+        width: 50%;
+    }
+
+    .header-content img {
+        width: 100px;
+        height: 70px;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: start;
+        align-content: center;
+        flex-wrap: wrap;
+        margin: 20px;
+
+    }
+
+    .projects {
+        width: 150px;
+        min-height: 250px;
+        margin: 15px;
+        padding: 25px;
+        transition: all 1s ease;
+    }
+
+    #skills {
+
+        padding: 10px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .highlight-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicesContent {
+
+        padding-top: 10px;
+        gap: 5px;
+    }
+
+
+    .testimonialContent {
+
+        gap: 10px;
+        margin: 50px;
+    }
+
+    .projects {
+        width: 200px;
+        min-height: 250px;
+        margin: 15px;
+        padding: 20px;
+        transition: all 1s ease;
+    }
+
+    .highlight-card {
+        width: 100%;
+    }
+
+    .header-content img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: start;
+        align-content: center;
+        flex-wrap: wrap;
+        margin: 30px;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0px 30px;
+        top: 0px;
+        position: relative;
+    }
+
+    nav ul li a {
+        color: var(--primary);
+    }
+
+
+    .circle {
+        height: 80px;
+        width: 80px;
+    }
+
+    .testimonialCard {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .testimonialCard img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .cardContent p {
+        text-align: center;
+
+    }
 }
